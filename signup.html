@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    </style>
+    <script defer src="signup.js">
+     
+    </script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="img">
+                <img src="img\Screenshot 2023-07-29 190014.png" alt="">
+            </div>
+            <h1>Sign up for free to start listening.</h1>
+            <header>
+    </section>
+    <div class="section">
+        <form action="signup.php" method="POST" name="myform " onsubmit="return validateform()">
+            <div class="email_mail">
+                <div class="passage">
+                    <label for="email" style="color: black;">
+                        <span style="display: inline-block;">
+                            What's your email?
+                        </span>
+                    </label>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="v"><br>
+                <a href="#">Use phone number instead.</a>
+            </div>
+            <div class="passoword_box" style="padding-block-end: 24px;">
+                <div class="password">
+                    <label for="password" style="color: black;">
+                        <span style="display: inline-block; margin-block-end:8px;">
+                            Create a Password
+                        </span>
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Create a Password" claas="gg" style=" appearance: none;
+                    background-image: none;
+                    border: 0px;
+                    display: block;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+                    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+                    inline-size: 100%;
+                    box-sizing: border-box;
+                    -webkit-tap-highlight-color: transparent;
+                    margin-block: 0px;
+                    border-radius: var(--border-radius-md, 4px);
+                    padding-inline: 14px;
+                    padding-block-start: var(--spacer--2, 8px);
+                    padding-block-end: 2px;
+                    min-block-size: 48px;
+                    background-color: var(--background-base, #ffffff);
+                    box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+                    color: var(--text-base, #000000);">
+                </div>
+            </div>
+            <div class="name_box" style="padding-block-end: 24px;">
+                <div class="name">
+                    <label for="name" style="color: black;">
+                        <span style="display: inline-block; margin-block-end:8px;font-family:'Roboto', sans-serif;">
+                            What's your profile?
+                        </span>
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="What's your profile" class="visha"><br>
+                    <p style="font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        margin-top: -12px;">This appear on your profile</p>
+                </div>
+            </div>
+            <div class="gender_box">
+                <div class="gender_label">
+                    <label for="Gender">
+                        <span style=" margin-top: -12px;">What's your date of birth?</span>
+                    </label>
+                </div>
+                <div class="inline" style="display: flex; justify-content: space-between;">
+                    <div class="yy">
+                        <div class="yyy" style="margin-block-end: 7px;">
+                            <label for="year">
+                                <span>Year</span>
+                            </label>
+                        </div><input type="text" aria-invalid="false" id="year" inputmode="numeric" maxlength="4"
+                            name="year" pattern="(19[0-9]{2})|(200)[0-9]|(201)[0-0]" placeholder="YYYY" 
+                            data-encore-id="year" class="vis">
+
+                    </div>
+                    <div class="month_box">
+                        <div class="month1"style="margin-block-end: 7px;">
+                            <label for="month">
+                                <span style="box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            font-size: 0.875rem;
+            font-weight: 700;
+            font-family:'Roboto', sans-serif;
+            align-items: center;
+            margin-block-end:10px;">Month</span>
+                            </label>
+                        </div>
+                        <div class="selector_month">
+                            <select style="    color: rgb(83, 83, 83);
+        width: 200px;
+        height: 48px;
+        border-radius:4px;
+        ;
+        box-shadow: inset 0 0 0 1px #878787;
+        " id="month" name="month"  aria-invalid="false" class="Select-month">
+                                <option selected disabled value>Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="day_box">
+                        <div class="dayy"style="margin-block-end: 7px;">
+                            <label for="day1">
+                                <span>
+                                    Day
+                                </span></label>
+                        </div>
+                        <input type="text" aria-invalid="false" id="day" inputmode="numeric" maxlength="2"
+                            name="day" pattern="((0?[1-9])|([12][0-9])|(3[01]))" placeholder="DD" 
+                             class="vish">
+                    </div>
+                </div>
+            </div>
+            <div class="gender_box">
+                <div class="gendder">
+                    <label for="gender">
+                        <span>What's your gender?</span>
+
+                    </label>
+                </div>
+                <div class="gender_option">
+                    <div class="male_box">
+                        <input type="radio" name="gender" value="male" id="male" value="male">
+                        <span claas="ff"></span>
+                        <label for="gender_option_male" id="gender_option_male">Male</label>
+                    </div>
+                    <div class="female_box" >
+                        <input type="radio" name="gender" value="female" id="female"value="female" style="box-sizing: border-box;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+                        -webkit-tap-highlight-color: transparent;
+                        background: transparent;
+                        border-radius: 50%;
+                        display: inline-block;
+                        block-size: 18px;
+                        user-select: none;
+                        inline-size: 16px;
+                        flex-shrink: 0;
+                        align-self: flex-start;
+                        top: 0px;
+                        position: relative;
+                        margin-left: 12px;
+                        margin-top:-1px;">
+                        <span claas="ff"></span>
+                        <label for="gender_option_female" id="gender_option_female "style="padding-left: 6px;">Female</label>
+                    </div>
+                    <div class="non_binary_box">
+                        <input type="radio" name="gender" value="non-binary" id="non-binary" value="non-binary">
+                        <span claas="ff"></span>
+                        <label for="binary_option" id="binary_option">Non-binary</label>
+                    </div>
+                    <div class="other_box">
+                        <input type="radio" name="gender" value="other" id="other" value="other">
+                        <span claas="ff"></span>
+                        <label for="gender_option_other" id="gender_option_other">Other</label>
+                    </div>
+                    <div class="Prefer-not-to-say_box">
+                        <input type="radio" name="gender" value="Prefer-not-to-say" id="Prefer-not-to-say" value=" ">
+                        <span claas="ff"></span>
+                        <label for="gender_option_Prefer-not-to-say"  id="gender_option_Prefer-not-to-say">Prefer not to say</label>
+                    </div>
+                
+                </div>
+
+            </div>
+<div class="firstcheck">
+    <input type="checkbox" name="click1" id="click1" >
+    <label for="click1">
+        <span>I would prefer not to receive marketing messages from Spotify</span>
+    </label>
+</div>
+<div class="Secondcheck">
+    <input type="checkbox" name="click2" id="click2" >
+    <label for="click2">
+        <span>Share my registration data with Spotify's content providers for marketing purposes.</span>
+    </label>
+</div>
+<div class="term">
+    <label for="term">
+        <span>
+            By clicking on sign-up,you agree to Spotify's<a href="#">Terms and Conditions of Use.
+            </a>
+        </span>
+    </label>
+</div>
+<div class="policy">
+    <label for="policy">
+        <span>
+            To learn more about how Spotify collects, uses, shares and protects your personal data, please see  <a href="#">
+                Spotify's Privacy Policy.
+            </a>
+        </span>
+    </label>
+</div>
+<div class="signup">
+
+
+    <button name="signup" id="signup">Signup</button>
+</div>
+<div class="an">
+    <span>
+        Have an account?<a href="index.html">Log in</a>
+    </span>
+</div>
+        </form>
+    </div>
+    
+</body>
+</html>

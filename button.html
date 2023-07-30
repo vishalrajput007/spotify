@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.gender_option {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Add gap between gender options */
+    }
+    
+    .male_box,
+    .female_box,
+    .non_binary_box,
+    .other_box,
+    .Prefer-not-to-say_box {
+        display: flex;
+        align-items: center;
+    }
+    
+    .male_box,
+    .female_box,
+    .other_box {
+        flex-basis: 30%; /* Set a common flex basis for male, female, and other options */
+    }
+    
+    /* Adjust the flex basis and width for non-binary and Prefer-not-to-say options */
+    .non_binary_box,
+    .Prefer-not-to-say_box {
+        flex-basis: 40%;
+    }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <div class="gender_option">
+        <div class="male_box">
+            <input type="radio" name="gender" required value="male" id="male">
+            <span class="ff"></span>
+            <label for="gender_option_male" id="gender_option_male">Male</label>
+        </div>
+        <div class="female_box">
+            <input type="radio" name="gender" required value="female" id="female">
+            <span class="ff"></span>
+            <label for="gender_option_female" id="gender_option_female">Female</label>
+        </div>
+        <div class="non_binary_box">
+            <input type="radio" name="gender" required value="non-binary" id="non-binary">
+            <span class="ff"></span>
+            <label for="binary_option" id="binary_option">Non-binary</label>
+        </div>
+        <div class="other_box">
+            <input type="radio" name="gender" required value="other" id="other">
+            <span class="ff"></span>
+            <label for="gender_option_other" id="gender_option_other">Other</label>
+        </div>
+        <div class="Prefer-not-to-say_box">
+            <input type="radio" name="gender" required value="Prefer-not-to-say" id="Prefer-not-to-say">
+            <span class="ff"></span>
+            <label for="gender_option_Prefer-not-to-say" id="gender_option_Prefer-not-to-say">Prefer not to say</label>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

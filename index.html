@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify log in page</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="head">
+
+            <img src="img\Screenshot 2023-07-29 130228.png" alt="icon" id="logo">
+        </div>
+    </section>
+    <div class="main">
+        <div class="box">
+            <h1 style="color: white;">Log in to Spotify</h1>
+            <hr>
+            <div class="input_box">
+                <div class="input_label">
+                    <div class="label">
+                        <label for="log_in">
+                            <span style="color: white;">
+                                Email or User name
+                            </span>
+                        </label>
+                    </div>
+                    <input aria-invalid="false" id="login-username" type="text" placeholder="Email or username" class="hh">
+                    <div class="pss">
+                        <div class="ps">
+                            <label for="password">
+                                <span id="passw">
+                                    Password
+                                </span>
+                            </label>
+                            <input type="password" id="login_pass" placeholder="Password"class="hh">
+                        </div>
+                        <div class="hidee">
+                            <img src="hide.png" alt="" onclick="passe()" class="pass_icon" id="pass_icon"
+                                width="28px" class="hh">
+                        </div>
+                        <div class="che">
+                            <div class="kk">
+                                <div class="container">
+                                    <input type="checkbox" id="check">
+                                    <label for="check" class="button"></label>
+                                </div>
+                            </div>
+                            <label for="#" id="me">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="butto">
+                        <button id="login-button" data-testid="login-button" class="Button-s" style="width: 100%;">Log
+                            in</button>
+                    </div>
+                    <div class="for">
+                        <a href="#">Forgot your password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="hr">
+        <div class="last">
+            <p>Don't have an account? <a href="signup.html"> Sign up for Spotify</a></p>
+        </div>
+    </div>
+    </div>
+  
+        <script defer>
+            var a = 0; 
+    
+            function passe() {
+                if (a === 1) {
+                    document.getElementById('login_pass').type = 'password';
+                    document.getElementById('pass_icon').src = 'hide.png';
+                    a = 0;
+                } else {
+                    document.getElementById('login_pass').type = 'text';
+                    document.getElementById('pass_icon').src = 'view.png';
+                    a = 1;
+                }
+            }
+        </script>
+
+</body>
+
+</html>
